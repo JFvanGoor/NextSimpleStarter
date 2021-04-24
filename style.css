@@ -64,6 +64,10 @@ body {
             justify-content: space-around;
         }
 
+        nav ul div ul {
+            font-family: "Ubuntu", sans-serif;
+        }
+
         nav div {
             flex-grow: 1;
         }

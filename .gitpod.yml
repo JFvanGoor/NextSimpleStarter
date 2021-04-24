@@ -1,9 +1,3 @@
-ports:
-  - port: 3000
-    onOpen: open-preview
 tasks:
-  - init: yarn
-    command: yarn dev
-github:
-  prebuilds:
-    pullRequestsFromForks: true
+  - init: 'echo "TODO: Replace with init/build command"'
+    command: npm start

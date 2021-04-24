@@ -37,13 +37,18 @@ body {
             background-color: rgba(255, 255, 255, 0.3);
         }
 
-        header img {
-            position: fixed;
-            right: 5px;
-            top: 5px;
-            z-index: 1;
-            width: 25px;
-        }
+    img {
+        position: relative;
+        left: 15px;
+        top: 5px;
+        z-index: 1;
+        width: 25px;
+        padding-right: 100% - 25px;
+    }
+
+    .logo {
+        background-color: rgb(227, 237, 253);
+    }
 
     nav {
         text-align: center;

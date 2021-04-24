@@ -6,6 +6,7 @@ body {
 }
 
     header {
+        font-family: "Playfair Display", serif;
         padding: 0px;
         margin: 0px;
     }
@@ -14,7 +15,6 @@ body {
         header div {
             width: auto;
             height: auto;
-            /* padding: 20px; */
             background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Raffael_058.jpg/1200px-Raffael_058.jpg");
             background-position-x: 50%;
             background-position-y: 700px;
@@ -33,7 +33,6 @@ body {
             margin-right: 10%;
             margin-top: 0px;
             padding-right: 0px;
-            /* min-width: fit-content; */
             background-color: rgba(255, 255, 255, 0.3);
         }
 
@@ -47,7 +46,7 @@ body {
     }
 
     .logo {
-        background-color: rgb(227, 237, 253);
+        background-image: linear-gradient(rgb(227, 237, 253), rgb(173, 181, 196));
     }
 
     nav {
@@ -65,20 +64,42 @@ body {
             justify-content: space-around;
         }
 
-        nav li {
+        nav div {
+            flex-grow: 1;
+        }
+
+        nav div li {
             background-color: rgb(224, 226, 238);
             margin: 2px;
-            /* padding: 0px 10px 0px 10px; */
             flex-grow: 1;
-            /* width: 25% - 1px;
-            display: grid; */
         }
 
-         nav li:hover {
+         nav div li:hover {
         background-color: rgb(234, 240, 240);
         }
+        
+        .dropdown_content {
+            display: none;
+            position: absolute;
+        }
 
-        #home {
+        .stoic_dropdown:hover .stoic_dropdown_content {
+            display: block;
+        }
+
+        .epic_dropdown:hover .epic_dropdown_content {
+            display: block;
+        }
+
+        .scept_dropdown:hover .scept_dropdown_content {
+            display: block;
+        }
+
+        .cynic_dropdown:hover .cynic_dropdown_content {
+            display: block;
+        }
+
+        .home {
             width: 100%;
         }
         
@@ -91,7 +112,7 @@ body {
         }
 
     main {
-        margin: 0px 7% 0px 7%;
+        margin: 0px 7% 40px 7%;
         background-color: rgb(219, 229, 238);
         padding: 10px;
     }
@@ -117,7 +138,7 @@ body {
     }
 
         address {
-            background-color: rgba(255, 255, 255, 0.3);
+            background-color: rgba(255, 255, 255, 0.4);
             width: 50%;
             min-width: fit-content;
             height: 100%;
